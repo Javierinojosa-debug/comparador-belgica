@@ -35,5 +35,5 @@ Cada idioma solo acepta sus propios ids. El número se mantiene en las páginas 
 ## Pendiente
 - GTM: `GTM-KM4S8SC3` (contenedor energyline.be, cuenta comparaluzygas.es).
 - `+34 XXX XXX XXX` → teléfono del editor en mentions légales / wettelijke vermeldingen.
-- Cookiebot: dar de alta `energyline.be`, banner en FR y NL.
+- Consentiam (CMP del GTM): clave propia para `energyline.be`, banner en FR y NL.
 - Dominio: comprar `energyline.be` y conectarlo en Netlify.
