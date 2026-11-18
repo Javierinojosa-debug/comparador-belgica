@@ -33,7 +33,7 @@ Cada idioma solo acepta sus propios ids. El número se mantiene en las páginas 
 `?h1=Texte du titre&em=mot`: cambia el titular y resalta la palabra (se inserta como texto, sin HTML).
 
 ## Pendiente
-- `GTM-XXXXXXX` → contenedor GTM de Bélgica (todas las páginas).
+- GTM: `GTM-KM4S8SC3` (contenedor energyline.be, cuenta comparaluzygas.es).
 - `+34 XXX XXX XXX` → teléfono del editor en mentions légales / wettelijke vermeldingen.
 - Cookiebot: dar de alta `energyline.be`, banner en FR y NL.
 - Dominio: comprar `energyline.be` y conectarlo en Netlify.
