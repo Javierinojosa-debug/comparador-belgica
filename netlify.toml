@@ -28,3 +28,31 @@
   status = 302
   force = true
   conditions = {Language = ["fr"]}
+
+# Enlaces legales del banner de Consentiam (un solo enlace para FR y NL):
+# /cookies y /privacy llevan a la versión en el idioma del navegador; francés por defecto.
+[[redirects]]
+  from = "/cookies"
+  to = "/nl/cookiebeleid"
+  status = 302
+  force = true
+  conditions = {Language = ["nl"]}
+
+[[redirects]]
+  from = "/cookies"
+  to = "/fr/politique-cookies"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/privacy"
+  to = "/nl/privacybeleid"
+  status = 302
+  force = true
+  conditions = {Language = ["nl"]}
+
+[[redirects]]
+  from = "/privacy"
+  to = "/fr/politique-de-confidentialite"
+  status = 302
+  force = true
