@@ -1,0 +1,30 @@
+# Configuración para Netlify
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    Cache-Control = "public, max-age=3600"
+
+# La portada (energyline.be) manda a cada visitante a su idioma según el navegador.
+# Quien no tenga francés ni neerlandés ve la página para elegir idioma.
+# Los anuncios deben apuntar siempre directamente a /fr/ o /nl/.
+[[redirects]]
+  from = "/"
+  to = "/nl/"
+  status = 302
+  force = true
+  conditions = {Language = ["nl"]}
+
+[[redirects]]
+  from = "/"
+  to = "/fr/"
+  status = 302
+  force = true
+  conditions = {Language = ["fr"]}
